@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #0c1116;
+}
+
+.app-root {
+  position: fixed;
+  inset: 0;
+}
+
+.canvas-host {
+  position: absolute;
+  inset: 0;
+}
+
+.canvas-host canvas {
+  display: block;
+  touch-action: none;
+}
+
+.hud {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: #eaf2f8;
+  user-select: none;
+}
+
+.hud-panel {
+  position: absolute;
+  background: rgba(9, 14, 20, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  line-height: 1.45;
+  backdrop-filter: blur(3px);
+}
+
+.hud-top-left {
+  top: 14px;
+  left: 14px;
+  max-width: 380px;
+}
+
+.hud-objective {
+  font-weight: 600;
+  font-size: 15px;
+  color: #7ef0c0;
+}
+
+.hud-mission {
+  margin-top: 2px;
+  opacity: 0.75;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hud-top-right {
+  top: 14px;
+  right: 14px;
+}
+
+.hud-top-right.wanted {
+  border-color: rgba(255, 70, 70, 0.7);
+  color: #ffdede;
+}
+
+.hud-stars {
+  font-size: 18px;
+  color: #ffd34d;
+  letter-spacing: 2px;
+}
+
+.hud-label {
+  font-size: 11px;
+  opacity: 0.65;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+}
+
+.hud-hint {
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(9, 14, 20, 0.72);
+  border: 1px solid rgba(126, 240, 192, 0.5);
+  color: #aef5d5;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hud-banner {
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #ff5252;
+  text-shadow: 0 0 18px rgba(255, 60, 60, 0.7), 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+.hud-bottom-left {
+  bottom: 14px;
+  left: 14px;
+  font-size: 12px;
+  opacity: 0.92;
+}
+
+.hud-bottom-right {
+  bottom: 14px;
+  right: 14px;
+  text-align: right;
+  min-width: 130px;
+}
+
+.hud-mode {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #9ecbff;
+}
+
+.hud-speed {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.hud-unit {
+  font-size: 12px;
+  opacity: 0.7;
+}
